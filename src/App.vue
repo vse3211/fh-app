@@ -53,6 +53,11 @@ export default {
   components: {
     //HelloWorld
     Dialog, vailableMods, Builds, Settings, Logs, SearchStory, RequiredMods
+  },
+  data() {
+    return {
+      modsDialogVisible: false;
+    }
   }
 }
 </script>
