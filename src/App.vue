@@ -1,4 +1,10 @@
 <template>
+  <Dialog v-model:show="modsDialogVisible">
+
+  </Dialog>
+  <Dialog v-model:show="downloadsDialogVisible">
+
+  </Dialog>
   <div class="child p5">
     <div class="leftBox">
       <button class="btn downloadsBtn">Downloads</button>
@@ -33,6 +39,7 @@
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
+import Dialog from '@/components/Dialog.vue'
 import AvailableMods from '@/components/AvailableMods'
 import Builds from '@/components/Builds'
 import Settings from '@/components/Settings'
@@ -45,7 +52,7 @@ export default {
   name: 'App',
   components: {
     //HelloWorld
-    AvailableMods, Builds, Settings, Logs, SearchStory, RequiredMods
+    Dialog, vailableMods, Builds, Settings, Logs, SearchStory, RequiredMods
   }
 }
 </script>
